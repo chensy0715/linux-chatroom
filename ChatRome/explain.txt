@@ -1,0 +1,36 @@
+1. Right now I have finish the feature from B1, B3,B4,and B5. And still working on B2 right now. Maybe I can not finish it online. I will submit late after the due day if I finish bonus part. I meet serveral problems when I do the program.
+
+At first, I choose the C++ to write the project, and when I try to save username to DB and send the message(byte to char,and char to byte) tranfering always have problems. And still have several point lossing problems. So that I have to change C++ to C and choose a simple select module to do the project. One of big problems is saving the data to DB, I try to use sqllite databse in linux sever to save the data( it works after debug).
+	
+	By the way: for the chatrome.db file you should put in the server part like this:
+	ubuntu@ip-172-31-46-111:~$ ls
+	chat.c       config.c    config.h   list.c   Makefile    server.c
+	chatRome.db  #config.h#  config.h~  login.c  register.c  server.c~
+
+2. for client and server both, I write serverl c file seperately, so that I create a makefile and config.h 
+    to compile all the file together. After you make it, you can run the program. Also before your compile, you need to change the rounte of chatrome.db file in config.h file. check the rounte of db file in your server. Also you still need to change the IP address and ports number in client.c in client part and server.c in server part.
+
+3. how to run the code: after you compile,  you will ge the small page:
+("-------------------------------------\n");
+("    welcome to chatroom～	      \n");
+("	   1.register                 \n");
+("	   2.login			      \n");
+("	   3.help			      \n");
+("	   4.exit			      \n");
+("-------------------------------------\n\n\n");
+plasse enter 1 or 2 to sign up and login
+and then after sign up, you can press for login;
+And then you will get the second page:
+("------------------------------------------\n");
+("Hi，%s                       \n", userName);
+("	     1. chat user online                 \n");
+("	     2. private chat                         \n");
+("	     3. group chat                         \n");
+("	     4. check history                 \n");
+("	     5. exit                         \n");
+("plase choose your operation～                    \n");
+("------------------------------------------\n\n\n");
+you can preee 1 to 5 choose whatever you want.
+
+4.  Acutually, I do not do the bonus part(I will add the command file again if I done that ), so that I consider there is much specific feature in my project. Just I select module to write the project, and change something in error handling. By the way, I do not use the same format with example provided. For client ,server part, I seperate and writhe the several c file , one h file and then combine together. 
+
